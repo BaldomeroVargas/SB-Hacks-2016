@@ -8,25 +8,67 @@
 }
 h1
 {
-    color: white;
+    text-align: center;
+    padding: 50px;
+    color: White;
     font-family: "Monterserrat", Arial;
 }
-.Main
+h2
 {
-    text-align: left;
+    color: black;
+    text-align: center;
+    font-family: "Monterserrat", Arial;
+    font-size: 20px;
 }
+.navbar	{
+	height: 50px;
+        padding: 0;
+	margin: 0;
+	left: 27%;
+	position: absolute; /* Ensures that the menu doesn’t affect other elements */
+	/*border-right: 1px solid #54879d; */
+}
+
+.navbar li 	{
+			height: auto;
+			width: 150px;  /* Each menu item is 150px wide */
+			float: left;  /* This lines up the menu items horizontally */
+			text-align: center;  /* All text is placed in the center of the box */
+			list-style: none;  /* Removes the default styling (bullets) for the list */
+			font: normal bold 12px/1.2em Arial, Verdana, Helvetica;  
+			padding: 0;
+			margin: 0;
+			background-color: black;
+}
+
+.navbar a	{							
+		padding: 18px 0;  /* Adds a padding on the top and bottom so the text appears centered vertically */
+		/*border-left: 1px solid #54879d; /* Creates a border in a slightly lighter shade of blue than the background.  Combined with the right border, this creates a nice effect. */
+		/*border-right: 1px solid #1f5065; /* Creates a border in a slightly darker shade of blue than the background.  Combined with the left border, this creates a nice effect. */
+		text-decoration: none;  /* Removes the default hyperlink styling. */
+		color: white; /* Text color is white */
+		display: block;
+}
+
+.navbar li:hover a {
+    background-color: gray;
+}
+
+#home {
+	background-color: #DF6F53;
+}
+
+.navbar li ul 	
+{
+	display: none;  /* Hides the drop-down menu */
+	height: auto;									
+	margin: 0; /* Aligns drop-down box underneath the menu item */
+	padding: 0; /* Aligns drop-down box underneath the menu item */			
+}	
 .Text-Box-1
 {
     font-family: "Monterserrat", Arial;
     font-size: 30px;
-    
-}
-.login
-{
-    
-}
-.sign-up
-{
     
 }
 .footer-content
@@ -40,16 +82,43 @@ h1
     position: relative;
     display: block;
 }
-.footer-text
-{
-    text-shadow: 0 1px 0 #FFF;
-    font-family: "Monterserrat", Arial;
-    font-size: .75em;
-    margin: 0 auto;
-    clear: both;
-}
-h2
-{
-    color: black;
+input[type=submit] {
+    width: 10em;  height: 6em;
 }
 
+    ul{
+        text-align: center;
+        padding: 0;
+        list-style: none;
+        background: #000000;
+    }
+    ul li{
+        display: inline-block;
+        position: relative;
+        line-height: 21px;
+        text-align: left;
+    }
+    ul li a{
+        display: block;
+        padding: 8px 25px;
+        color: #FFFFFF;
+        text-decoration: none;
+    }
+    ul li a:hover{
+        color: #fff;
+        background: #000000;
+    }
+    ul li ul.dropdown{
+        min-width: 170px; /* Set width of the dropdown */
+        background: #777777;
+        display: none;
+        position: absolute;
+        z-index: 999;
+        left: 0;
+    }
+    ul li:hover ul.dropdown{
+        display: block; /* Display the dropdown */
+    }
+    ul li ul.dropdown li{
+        display: block;
+    }
