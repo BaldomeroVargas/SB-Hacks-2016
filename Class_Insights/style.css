@@ -18,7 +18,7 @@ h2
     color: black;
     text-align: center;
     font-family: "Monterserrat", Arial;
-    font-size: 20px;
+    font-size: 30px;
 }
 .navbar	{
 	height: 50px;
@@ -69,7 +69,8 @@ h2
 {
     font-family: "Monterserrat", Arial;
     font-size: 30px;
-    
+    text-align: center;
+    position: relative;
 }
 .footer-content
 {
@@ -82,43 +83,46 @@ h2
     position: relative;
     display: block;
 }
-input[type=submit] {
-    width: 10em;  height: 6em;
+ul
+{
+    text-align: center;
+    padding: 0;
+    list-style: none;
+    background: #000000;
 }
-
-    ul{
-        text-align: center;
-        padding: 0;
-        list-style: none;
-        background: #000000;
-    }
-    ul li{
-        display: inline-block;
-        position: relative;
-        line-height: 21px;
-        text-align: left;
-    }
-    ul li a{
-        display: block;
-        padding: 8px 25px;
-        color: #FFFFFF;
-        text-decoration: none;
-    }
-    ul li a:hover{
-        color: #fff;
-        background: #000000;
-    }
-    ul li ul.dropdown{
-        min-width: 170px; /* Set width of the dropdown */
-        background: #777777;
-        display: none;
-        position: absolute;
-        z-index: 999;
-        left: 0;
-    }
-    ul li:hover ul.dropdown{
-        display: block; /* Display the dropdown */
-    }
-    ul li ul.dropdown li{
-        display: block;
-    }
+ul li
+{
+    display: inline-block;
+    position: relative;
+    line-height: 21px;
+    text-align: left;
+}
+ul li a
+{
+    display: block;
+    padding: 8px 25px;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+ul li a:hover
+{
+    color: #fff;
+    background: #000000;
+}
+ul li ul.dropdown
+{
+    min-width: 170px; /* Set width of the dropdown */
+    background: #777777;
+    display: none;
+    position: absolute;
+    z-index: 999;
+    left: 0;
+}
+ul li:hover ul.dropdown
+{
+    display: block; /* Display the dropdown */
+}
+ul li ul.dropdown li
+{
+    display: block;
+}
