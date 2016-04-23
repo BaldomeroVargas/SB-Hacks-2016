@@ -1,0 +1,86 @@
+@import url(http://fonts.googleapis.com/ccs?family=Monterserrat);
+.Top-Bar
+{
+    width: 100%;
+    text-align: center;
+    padding: 2px;
+    height:; 75px;
+    background: url(http://www.solidbackgrounds.com/images/1920x1080/1920x1080-black-solid-color-background.jpg);
+}
+h1
+{
+    color: white;
+    font-family: "Monterserrat", Arial;
+}
+.Main
+{
+    text-align: center;
+}
+.Text-Box
+{
+    position: relative;
+    padding-right: 40px;
+    padding-left: 40px;
+    display: inline-block;
+    max-width: 400px;
+    margin: 0 auto;
+    font-size: 20px;
+    text-shadow: 0 1px 0 #FFF;
+    font-family: "Monterserrat", Arial;
+}
+.Text-Box-2
+{
+    position: relative;
+    padding-right: 40px;
+    padding-left: 40px;
+    display: inline-block;
+    max-width: 400px;
+    margin: 0 auto;
+    font-size: 20px;
+    text-shadow: 0 1px 0 #FFF;
+    font-family: "Monterserrat", Arial;
+}
+.footer-content
+{
+    clear: both;
+    background: url(http://learncs8.com/images/section-sep.png)
+    repeat-x left 25px;
+    max-width: 400px;
+    height: 20px;
+    padding: 10px;
+    margin: 0 auto;
+    position: relative;
+    display: block;
+}
+.footer-text
+{
+    text-shadow: 0 1px 0 #FFF;
+    font-family: "Monterserrat", Arial;
+    font-size: .75em;
+    margin: 0 auto;
+    clear: both;
+}
+h2
+{
+    color: black;
+}
+.White-Space
+{
+    height: 75px;
+    display: block;
+    clear: both;
+}
+.Text-Box-2 form input.button
+{
+    height: 38px;
+    background: #D00000;
+    border: 1px solid #066a19;
+    font-size: 14px;
+    color: #ffffff;
+    cursor: pointer;
+    text-shadow: 0 -1px 0 rbga(0,0,0,0.5);
+    
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    border-radius: 15px;
+}
