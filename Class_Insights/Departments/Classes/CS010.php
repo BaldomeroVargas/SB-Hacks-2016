@@ -48,7 +48,12 @@
 			if($result2['class_id'] == $class_num){
 				echo $result2['username'] . ": " . $result2['content'],"<br>";
 }
+<<<<<<< HEAD
 		}	
+=======
+		}
+		
+>>>>>>> 62fe203156119bf695b0e37822e9328d7620d9b6
 	?>
     </body>
 </html>

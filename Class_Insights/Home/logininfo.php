@@ -30,12 +30,17 @@ function check_user() {
 //Create connection
 
 if(check_user()){
+<<<<<<< HEAD
 	if(sleep(3)){
 	echo "Successful Login";
 	}
 	else{
 	header("Location: ../indexc.html");
 	}
+=======
+	echo "Successful login!";
+	header("Location: indexc.html")
+>>>>>>> 62fe203156119bf695b0e37822e9328d7620d9b6
 }
 else{
 	echo "Error: Username or password is incorrect";
