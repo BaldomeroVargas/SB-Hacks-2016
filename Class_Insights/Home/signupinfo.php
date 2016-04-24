@@ -8,7 +8,7 @@ function read_data_base(){
 }
 
 function reg_user(){
-	$uname = $_POST['username'];
+	$uname = $_POST['password'];
 	#checking the password constraints for size 6-32
 	if(strlen($uname) < 6 or strlen($uname) > 32){
 		echo "Error: Please make an appropriate sized password<br>";
