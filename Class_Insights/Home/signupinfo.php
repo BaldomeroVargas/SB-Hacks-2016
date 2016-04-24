@@ -1,21 +1,39 @@
 <html>
 <body>
   <?php
-
-class Config {
-	const HOST = 'localhost';
-	const USER = 'root';
-	const PASS = '39632hd';
-	const DBNAME = 'Database One';
-}
-
-// access config
-//Config::HOST // reutrns 'lcoalhost'
-
+  
 function read_data_base(){
 	
 	
 }
+
+function reg_user() {
+	
+	$pw = $_POST['password'];
+	$pw2 = $_POST['confirmpassword'];
+	if (strlen($pw) < 6 or strlen($pw) > 32) {
+		return "Error 1";
+	}
+	
+	if (preg_match('/(?=.*?[a-z])(?=.*?[A-Z])(?=.*?[^a-zA-Z]).{8,}/', $pw)) {
+		return "Error 2";
+	}
+	
+	if (strcmp($pw, $pw2) != 0) {
+		return "Error 3";
+	}
+	
+	
+	$user = new Users();
+	$user->save(
+		$_POST['username'],
+		$_POST['password'],
+		$_POST['firstname'],
+		$_POST['lastname']
+	);
+}
+
+/*
 
 function reg_user(){
 	$uname = $_POST['password'];
@@ -42,15 +60,20 @@ function reg_user(){
 			echo "Error: Please make sure all conditions are met for password<br>";
 		}
 		else{
-			
 				#checking if input passwords match
 				if(strcmp($_POST['password'], $_POST['confirmpassword']) != 0){
 					echo "Error: Please confirm password<br>";
 				}
 				else{
+					#creates a new user
+				    $servername = "localhost";
+				    $user = "root";
+				    $pass = "39632hd";
+				    $dbname = "Database One";
+			
 				    //Create connection
 			
-				    $pdo = new PDO("mysql:host=Confg::HOST;dbname=Config::DBNAME", Config::USER, Config::PASS);
+				    $pdo = new PDO("mysql:host=$servername;dbname=$dbname", $user, $pass);
 			
 				    $stmt = $pdo->prepare("INSERT INTO Users (username, password, first_name, last_name, avatar_id) VALUES		(:username, :password, :first_name, :last_name, 0)");
 			
@@ -67,7 +90,7 @@ function reg_user(){
 			}			
 		}
 	
-}
+}*/
 
 reg_user();
 ?>
