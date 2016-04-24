@@ -5,12 +5,12 @@ class Database {
     protected $pdo;
     protected $sth;
     
-    private const HOST = '';
-    private const USER = '';
-    private const PASS = '';
-    private const BDNAME = '';
+    const HOST = 'localhost';
+    const USER = 'root';
+    const PASS = '39632hd';
+    const BDNAME = 'Database One';
     
-    public function __cosntruct() {
+    public function __construct() {
         $this->pdo = new PDO("mysql:host=" . Database::HOST . ";dbname=" . 
         Database::BDNAME, Database::USER, Database::PASS);
     }

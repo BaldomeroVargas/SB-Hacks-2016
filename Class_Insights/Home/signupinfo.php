@@ -2,6 +2,7 @@
 <body>
   <?php
   
+include("users.php");
 function read_data_base(){
 	
 	
@@ -15,7 +16,7 @@ function reg_user() {
 		return "Error 1";
 	}
 	
-	if (preg_match('/(?=.*?[a-z])(?=.*?[A-Z])(?=.*?[^a-zA-Z]).{8,}/', $pw)) {
+	if (!preg_match('/(?=.*?[a-z])(?=.*?[A-Z])(?=.*?[^a-zA-Z]).{8,}/', $pw)) {
 		return "Error 2";
 	}
 	
@@ -25,7 +26,7 @@ function reg_user() {
 	
 	
 	$user = new Users();
-	$user->save(
+	return $user->save(
 		$_POST['username'],
 		$_POST['password'],
 		$_POST['firstname'],
@@ -92,7 +93,7 @@ function reg_user(){
 	
 }*/
 
-reg_user();
+echo reg_user();
 ?>
 </body>
 </html>

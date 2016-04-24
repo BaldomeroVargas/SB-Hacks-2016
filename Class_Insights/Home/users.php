@@ -1,8 +1,9 @@
 <?php
-
+include("database.php");
 class Users extends Database{
+
     public function __construct() {
-        parent::__construct(); //call parent constructor?
+        parent::__construct();
         
     }
     
@@ -14,8 +15,14 @@ class Users extends Database{
         $this->sth->bindParam(":password",$password);
         $this->sth->bindParam(":first_name",$first_name);
         $this->sth->bindParam(":last_name",$last_name);
-        
-        $this->sth->execute();
+        try {
+        	if ($this->sth->execute())
+			return "success";
+	} catch (Exception $e) {
+		var_dump($e->getMessage());
+	}
+	
+	return "Username already exists";
     }
     
     /**
