@@ -1,18 +1,16 @@
 <html>
 <body>
-	<?php
+<?php
 include("users.php");
-
+echo "hi<br>";
 function check_user() {
 	$user = new Users();
-	return $user->save(
-		$_POST['username'],
-		$_POST['password'],
-		$_POST['firstname'],
-		$_POST['lastname']
-	);
+	return $user->getOne($_POST['username']);
 }
 
+$result = check_user();
+var_dump($result);
+echo "bye<br>";
 ?>
 </body>
 </html> 

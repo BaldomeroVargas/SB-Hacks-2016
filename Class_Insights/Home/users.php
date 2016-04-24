@@ -29,8 +29,7 @@ class Users extends Database{
      * 
      */
     public function getOne($username) {
-        $this->sth = $this->pdo->prepare("SELECT username, password, first_name, last_name
-        FROM Users
+        $this->sth = $this->pdo->prepare("SELECT username FROM Users
         WHERE username = :username LIMIT 1");
         
         $this->sth->bindParam(':username', $username);
