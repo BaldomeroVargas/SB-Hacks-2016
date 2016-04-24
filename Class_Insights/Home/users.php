@@ -32,7 +32,7 @@ class Users extends Database{
 		$this->sth->bindParam(':username', $username);
 		$this->sth->bindParam(':password', $password);
 		$this->sth->execute();
-		
+
 		$result = $this->sth->fetch(PDO::FETCH_ASSOC);
 		
 		return $result['id'];

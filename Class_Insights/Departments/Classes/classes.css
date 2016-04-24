@@ -1,24 +1,23 @@
-@import url(https://fonts.googleapis.com/css?family=Comfortaa);
 h1
 {
 	text-align: center;
-	font-size: 30pt;
-	font-family: "Comfortaa";
+	font-size: 30px;
+	font-family: "Monterserrat", Arial;
 	color: white;
 }
 h2
 {
 	text-align: center;
-	font-size: 30pt;
-	font-family: "Comfortaa";
+	font-size: 30px;
+	font-family: "Monterserrat", Arial;
 	color: white;
 	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 h3
 {
 	text-align: center;
-	font-size: 12pt;
-	font-family: "Comfortaa";
+	font-size: 12px;
+	font-family: "Monterserrat", Arial;
 	color: white;
 	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
@@ -26,37 +25,22 @@ h3
 h4
 {
 	text-align: center;
-	font-size: 30pt;
-	font-family: "Comfortaa";
+	font-size: 30px;
+	font-family: "Monterserrat", Arial;
 	color: black;
 }
 h5
 {
 	text-align: center;
-	font-size: 12pt;
-	font-family: "Comfortaa";
-	color: white;
-	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+	font-size: 12px;
+	font-family: "Monterserrat", Arial;
+	color: BLACK;
 }
 h6
 {
 	text-align: center;
-	font-size: 18pt;
-	font-family: "Comfortaa";
+	font-size: 18px;
+	font-family: "Monterserrat", Arial;
 	color: white;
 	text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;	
-}
-h7
-{
-	text-align: center;
-	font-size: 12pt;
-	font-family: "Comfortaa";
-	color: black;	
-}
-.resizeButton
-{
-    width: 100px;
-    height: 60px;
-    font-family: "Comfortaa";
-    font-size: 20pt;
 }
