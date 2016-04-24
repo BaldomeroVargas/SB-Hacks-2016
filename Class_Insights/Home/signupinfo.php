@@ -1,7 +1,17 @@
 <html>
 <body>
   <?php
-  
+
+class Config {
+	const HOST = 'localhost';
+	const USER = 'root';
+	const PASS = '39632hd';
+	const DBNAME = 'Database One';
+}
+
+// access config
+//Config::HOST // reutrns 'lcoalhost'
+
 function read_data_base(){
 	
 	
@@ -32,20 +42,15 @@ function reg_user(){
 			echo "Error: Please make sure all conditions are met for password<br>";
 		}
 		else{
+			
 				#checking if input passwords match
 				if(strcmp($_POST['password'], $_POST['confirmpassword']) != 0){
 					echo "Error: Please confirm password<br>";
 				}
 				else{
-					#creates a new user
-				    $servername = "localhost";
-				    $user = "root";
-				    $pass = "39632hd";
-				    $dbname = "Database One";
-			
 				    //Create connection
 			
-				    $pdo = new PDO("mysql:host=$servername;dbname=$dbname", $user, $pass);
+				    $pdo = new PDO("mysql:host=Confg::HOST;dbname=Config::DBNAME", Config::USER, Config::PASS);
 			
 				    $stmt = $pdo->prepare("INSERT INTO Users (username, password, first_name, last_name, avatar_id) VALUES		(:username, :password, :first_name, :last_name, 0)");
 			
