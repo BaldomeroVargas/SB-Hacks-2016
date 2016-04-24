@@ -1,0 +1,16 @@
+body
+{
+    background-image: url(https://static.pexels.com/photos/11406/c12ee0f379643a278198b2086afd3b9c.jpg);
+    background-size: cover;
+}
+h1
+{
+    font-size: 30px;
+    text-align: center;
+    color: white;
+}
+input[type=submit] 
+{
+    width: 150px;  height: 50px;
+    font-size: 15pt;
+}

@@ -8,7 +8,8 @@
 }
 body
 {
-    background-image: url(http://image.noelshack.com/fichiers/2014/38/1410967177-dragonballzgif-0.gif);
+    background-image: url(wallpaper.jpg);
+    background-size: cover;
 }
 h1
 {
@@ -19,14 +20,21 @@ h1
 }
 h2
 {
-    color: black;
+    color: wHITE;
     text-align: center;
     font-family: "Monterserrat", Arial;
     font-size: 20px;
 }
-.navbar	{
+h3
+{
+    color: white;
+}
+
+
+.navbar	
+{
 	height: 50px;
-        padding: 0;
+    padding: 0;
 	margin: 0;
 	left: 27%;
 	position: absolute; /* Ensures that the menu doesn’t affect other elements */
@@ -72,20 +80,17 @@ h2
 .Text-Box-1
 {
     font-family: "Monterserrat", Arial;
-    font-size: 30px;
+    font-size: 50px;
     text-align: center;
     position: relative;
+    color: white;
 }
 .footer-content
 {
-    clear: both;
-    background: url(http://learncs8.com/images/section-sep.png)
-    repeat-x left 25px;
-    height: 20px;
-    padding: 10px;
-    margin: 0 auto;
-    position: relative;
-    display: block;
+    position: fixed;
+    bottom: 0;
+    left: 43%; 
+    right: 50%;
 }
 ul
 {
