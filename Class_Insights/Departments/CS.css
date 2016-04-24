@@ -1,3 +1,4 @@
+@import url(https://fonts.googleapis.com/css?family=Comfortaa);
 body
 {
     background-image: url(http://i.imgur.com/VC03Kas.gif);
@@ -5,8 +6,9 @@ body
 }
 h1
 {
-    font-size: 30px;
+    font-size: 30pt;
     text-align: center;
+    font-family: "Comfortaa";
     color: white;
 }
 input[type=submit] 

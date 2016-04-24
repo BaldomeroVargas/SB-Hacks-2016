@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/ccs?family=Monterserrat);
+@import url(https://fonts.googleapis.com/css?family=Comfortaa);
 .Top-Bar
 {
     text-align: left;
@@ -16,33 +16,41 @@ h1
     text-align: center;
     padding: 50px;
     color: White;
-    font-family: "Monterserrat", Arial;
+    font-family: "Comfortaa";
 }
 h2
 {
     color: wHITE;
     text-align: center;
-    font-family: "Monterserrat", Arial;
+    font-family: "Comfortaa";
     font-size: 20px;
 }
 h3
 {
     color: white;
 }
-
+h4
+{
+    text-align: center;
+    padding: 50px;
+    color: Black;
+    font-family: "Comfortaa"; 
+    font-size: 26pt;
+}
 .navbar	
 {
 	height: 50px;
     padding: 0;
 	margin: 0;
 	left: 27%;
+	width: 100%;
 	position: absolute; /* Ensures that the menu doesn’t affect other elements */
 	/*border-right: 1px solid #54879d; */
 }
 
 .navbar li 	{
 			height: auto;
-			width: 150px;  /* Each menu item is 150px wide */
+			width: 250px;  /* Each menu item is 150px wide */
 			float: left;  /* This lines up the menu items horizontally */
 			text-align: center;  /* All text is placed in the center of the box */
 			list-style: none;  /* Removes the default styling (bullets) for the list */
@@ -78,22 +86,17 @@ h3
 }	
 .Text-Box-1
 {
-    font-family: "Monterserrat", Arial;
+    font-family: "Comfortaa";
     font-size: 50px;
     text-align: center;
     position: relative;
     color: white;
 }
-.footer-content
-{
-    position: fixed;
-    bottom: 0;
-    left: 43%; 
-    right: 50%;
-}
 ul
 {
     text-align: center;
+    font-family: "Comfortaa";
+    font-size: 14pt;
     padding: 0;
     list-style: none;
     background: #000000;
@@ -102,7 +105,7 @@ ul li
 {
     display: inline-block;
     position: relative;
-    line-height: 21px;
+    line-height: 35px;
     text-align: left;
 }
 ul li a
@@ -134,3 +137,39 @@ ul li ul.dropdown li
 {
     display: block;
 }
+
+
+body {padding: 0; margin: 0; background-color: #333;}
+
+.container {}
+
+/* FADE IN */
+@-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+@keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+
+
+
+.fade-in 
+{
+  opacity:0;  /* make things invisible upon start */
+  -webkit-animation:fadeIn ease-in 1;  /* call our keyframe named fadeIn, use animattion ease-in and repeat it only 1 time */
+  -moz-animation:fadeIn ease-in 1;
+  animation:fadeIn ease-in 1;
+
+  -webkit-animation-fill-mode:forwards;  /* this makes sure that after animation is done we remain at the last keyframe value (opacity: 1)*/
+  -moz-animation-fill-mode:forwards;
+  animation-fill-mode:forwards;
+
+  -webkit-animation-duration:1s;
+  -moz-animation-duration:1s;
+  animation-duration:1s;
+}
+
+.fade-in.one
+{
+  -webkit-animation-delay: 1.5s;
+  -moz-animation-delay: 1.5s;
+  animation-delay: 1.5s;
+}
+
