@@ -1,16 +1,18 @@
 <html>
 <body>
-	<?php
+<?php
 include("users.php");
 
 function check_user() {
 	$user = new Users();
-	return $user->save(
-		$_POST['username'],
-		$_POST['password'],
-		$_POST['firstname'],
-		$_POST['lastname']
-	);
+	return $user->check($_POST['username'], $_POST['password']);
+}
+
+if(check_user()){
+	echo "Successful login!";
+}
+else{
+	echo "Error: Username or password is incorrect";
 }
 
 ?>
