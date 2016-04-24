@@ -31,9 +31,11 @@ function check_user() {
 
 if(check_user()){
 	echo "Successful login!";
+	header("Location: indexc.html")
 }
 else{
 	echo "Error: Username or password is incorrect";
+	header("Location: login.html")
 }
 
 ?>
