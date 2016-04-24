@@ -24,12 +24,26 @@ class Users extends Database{
 	
 	return "Username already exists";
     }
+
+	public function check($username, $password){
+		$this->sth = $this->pdo->prepare("SELECT * FROM Users
+		WHERE username = :username AND password = :password 			LIMIT 1");
+		
+		$this->sth->bindParam(':username', $username);
+		$this->sth->bindParam(':password', $password);
+		$this->sth->execute();
+		
+		$result = $this->sth->fetch(PDO::FETCH_ASSOC);
+		
+		return $result['id'];
+
+	}
     
     /**
      * 
      */
     public function getOne($username) {
-        $this->sth = $this->pdo->prepare("SELECT username FROM Users
+        $this->sth = $this->pdo->prepare("SELECT * FROM Users
         WHERE username = :username LIMIT 1");
         
         $this->sth->bindParam(':username', $username);

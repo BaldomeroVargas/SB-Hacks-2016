@@ -2,15 +2,19 @@
 <body>
 <?php
 include("users.php");
-echo "hi<br>";
+
 function check_user() {
 	$user = new Users();
-	return $user->getOne($_POST['username']);
+	return $user->check($_POST['username'], $_POST['password']);
 }
 
-$result = check_user();
-var_dump($result);
-echo "bye<br>";
+if(check_user()){
+	echo "Successful login!";
+}
+else{
+	echo "Error: Username or password is incorrect";
+}
+
 ?>
 </body>
 </html> 
