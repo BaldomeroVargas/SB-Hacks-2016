@@ -6,6 +6,10 @@
     height: 140px;
     background: url(http://www.solidbackgrounds.com/images/2880x1800/2880x1800-yankees-blue-solid-color-background.jpg);
 }
+body
+{
+    background-image: url(http://image.noelshack.com/fichiers/2014/38/1410967177-dragonballzgif-0.gif);
+}
 h1
 {
     text-align: center;
@@ -18,7 +22,7 @@ h2
     color: black;
     text-align: center;
     font-family: "Monterserrat", Arial;
-    font-size: 30px;
+    font-size: 20px;
 }
 .navbar	{
 	height: 50px;
