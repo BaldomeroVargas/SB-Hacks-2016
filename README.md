@@ -4,10 +4,14 @@ Web Application that allows users to post in a forum like environment about thei
 
 ##### Front End:
 
-Samuel Choi <br \>
+Samuel Choi 
+
+
 Fransico Munoz
 
 ##### Back End:
 
-Henry Doan <br \>
+Henry Doan
+
+
 Baldomero Vargas
